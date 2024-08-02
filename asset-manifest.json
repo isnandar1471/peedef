@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/peedef/static/css/main.db3ebea2.css",
+    "main.js": "/peedef/static/js/main.63dd5d6f.js",
+    "static/js/9.40ce8105.chunk.js": "/peedef/static/js/9.40ce8105.chunk.js",
+    "index.html": "/peedef/index.html",
+    "main.db3ebea2.css.map": "/peedef/static/css/main.db3ebea2.css.map",
+    "main.63dd5d6f.js.map": "/peedef/static/js/main.63dd5d6f.js.map",
+    "9.40ce8105.chunk.js.map": "/peedef/static/js/9.40ce8105.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db3ebea2.css",
+    "static/js/main.63dd5d6f.js"
+  ]
+}
