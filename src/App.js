@@ -1,6 +1,5 @@
 import {HashRouter, Route, Routes,} from 'react-router-dom';
 import Home from './views/pages/Home';
-import About from "./views/pages/About";
 
 import {ThemeProvider} from "./contexts/ThemeContext";
 import Merge from "./views/pages/Merge";
@@ -9,6 +8,12 @@ import Split from "./views/pages/Split";
 import {ToastContainer, Slide} from "react-toastify";
 
 import 'react-toastify/dist/ReactToastify.css';
+import NotFound from "./views/pages/errors/NotFound";
+
+export const routePaths = {
+    split: '/split',
+    merge: '/merge',
+}
 
 export default function App() {
     return (
@@ -17,9 +22,9 @@ export default function App() {
                 <HashRouter>
                     <Routes>
                         <Route path={'/'} element={<MainLayout><Home/></MainLayout>}/>
-                        <Route path={'/split'} element={<MainLayout><Split/></MainLayout>}/>
-                        <Route path={'/merge'} element={<MainLayout><Merge/></MainLayout>}/>
-                        <Route path={"/about"} element={<About/>}></Route>
+                        <Route path={routePaths.split} element={<MainLayout><Split/></MainLayout>}/>
+                        <Route path={routePaths.merge} element={<MainLayout><Merge/></MainLayout>}/>
+                        <Route path={"*"} element={<MainLayout><NotFound/></MainLayout> }/>
                     </Routes>
                 </HashRouter>
             </ThemeProvider>
